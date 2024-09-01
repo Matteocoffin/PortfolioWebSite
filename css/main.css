@@ -2596,4 +2596,36 @@ footer .copyright span:last-child::after {
 	background: #000000;
 }
 
+.voyage-info {
+	margin-top: 10%;
+    display: flex;
+    align-items: center; /* Centre verticalement l'image par rapport au texte */
+    flex-wrap: wrap;
+}
+
+.voyage-info img {
+    max-width: 40%; /* Réduit la taille de l'image */
+    height: auto;
+    margin-right: 20px; /* Espace entre l'image et le texte */
+    flex-shrink: 0; /* Empêche l'image de se réduire trop si l'espace devient restreint */
+}
+
+.voyage-info .text-content {
+    flex: 1; /* Le texte prend tout l'espace restant */
+}
+
+@media (max-width: 768px) {
+    .voyage-info {
+        flex-direction: column; /* Passe en colonne sur les petits écrans */
+        align-items: flex-start; /* Aligne les éléments à gauche */
+    }
+
+    .voyage-info img {
+        margin-right: 0;
+        margin-bottom: 20px; /* Ajoute un espace sous l'image pour la séparation */
+        width: 100%; /* L'image s'ajuste à la largeur du conteneur */
+    }
+}
+
+
 /*# sourceMappingURL=main.css.map */
